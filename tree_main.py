@@ -26,7 +26,7 @@ def tree(i, j, new_array, treeN,t_n,N,r):
 
     elif p > np.random.uniform(0,1):
       if arr[i - 1][j - 1] ==0:
-        neighbbours = moore_neighbours(arr,i-1,j-1)
+        neighbours = moore_neighbours(arr,i-1,j-1)
         von_neighbours = von_neumann_neighbours(i-1,j-1,r)
         if all(arr[tuple(m)] != k for m in von_neighbours for k in not_treeN)and sum(neighbours)<=2*t_n:
           arr[i - 1][j - 1] = t_n
