@@ -42,7 +42,7 @@ for i in range(N):
     if binary_array[i,j] != 0:
       binary_array[i,j] = 1
 
-plt.imshow(binary_array,cmap='Greens')
+plt.imshow(binary_array,cmap='Greens',origin='lower')
 plt.scatter(scatter_seeds[:,1],scatter_seeds[:,0],marker='v',color='black',s=60)
 plt.savefig('Shyness_picture.png')
 
