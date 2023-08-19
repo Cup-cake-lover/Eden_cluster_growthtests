@@ -3,7 +3,7 @@ from tree_main import tree
 from helper_functions import seed_parse
 import matplotlib.pyplot as plt ; import numpy as np
 import matplotlib
-matplotlib.rcParams['figure.dpi']=100
+matplotlib.rcParams['figure.dpi']=200
 plt.style.use('seaborn-v0_8-colorblind')
 
 parser = argparse.ArgumentParser()
@@ -43,7 +43,7 @@ for i in range(N):
       binary_array[i,j] = 1
 
 plt.imshow(binary_array,cmap='Greens')
-plt.scatter(scatter_seeds[:,0],scatter_seeds[:,1],marker='v',color='black',s=60)
+plt.scatter(scatter_seeds[:,1],scatter_seeds[:,0],marker='v',color='black',s=60)
 plt.savefig('Shyness_picture.png')
 
 
