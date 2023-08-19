@@ -44,7 +44,7 @@ for i in range(N):
 
 plt.imshow(binary_array,cmap='Greens')
 plt.scatter(scatter_seeds[:,0],scatter_seeds[:,1],marker='v',color='black',s=60)
-plt.save('Shyness_picture.png')
+plt.savefig('Shyness_picture.png')
 
 
 
