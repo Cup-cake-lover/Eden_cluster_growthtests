@@ -2,6 +2,7 @@ import argparse
 from tree_main import tree
 from helper_functions import seed_parse
 import matplotlib.pyplot as plt ; import numpy as np
+from tqdm import tqdm
 import matplotlib
 matplotlib.rcParams['figure.dpi']=200
 plt.style.use('seaborn-v0_8-colorblind')
@@ -21,6 +22,7 @@ sample_array = np.zeros((N,N))
 new_arr,scatter_seeds = seed_parse(sample_array,'seeds.csv')
 t = 0
 t_0 = args.t
+pbar = tqdm(desc='Growing Trees progres:',value=t_0)
 treeN = int(len(scatter_seeds)) + 1 
 r = args.r
 t_0 = args.t
@@ -32,9 +34,9 @@ while t<t_0:
         new_arr = tree(i, j, new_arr, treeN,t_n,N,r)
 
 
-  t += 1 ; print('Growing trees..,Time_elapsed=',t) 
-
-
+  t += 1 #; print('Growing trees..,Time_elapsed=',t)   
+  pbar.update(1)
+pbar.close()
 #plt.imshow(new_arr,cmap='plasma',origin='lower')
 binary_array = new_arr
 for i in range(N):
