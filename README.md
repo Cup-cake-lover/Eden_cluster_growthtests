@@ -21,6 +21,7 @@ Usage :  python3 random_seed_gen.py --g 200 --r 2 --s 6969 --N 5 \
 
 This can create any randomly distributed seed lattice.
 
+Aknowledgements: Sandra Elsa Sanjai
 
 
 
