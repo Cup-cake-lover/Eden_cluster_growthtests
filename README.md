@@ -11,7 +11,7 @@ This Python script simulates the growth of Eden clusters with the inclusion of a
 
 ## How it Works
 
-The model is based on Eden Cluster growth, with an added repulsion factor that prevents clusters from growing too closely to one another. This introduces a behavior similar to crown shyness. The script grows clusters starting from seed points, and by adjusting parameters such as grid size, time, and repulsion factor, you can simulate different growth patterns.
+The model is based on Eden Cluster growth, with an added repulsion factor that prevents clusters from growing too closely to one another. This introduces a behavior similar to crown shyness. The script grows clusters starting from seed points, and by adjusting parameters such as grid size, time, and repulsion factor, you can simulate different growth patterns. There is also an branch repulsion added to create more rugged borders.
 
 
 ### Features
