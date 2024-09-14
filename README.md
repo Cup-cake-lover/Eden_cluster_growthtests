@@ -31,13 +31,20 @@ The model is based on Eden Cluster growth, with an added repulsion factor that p
 type in your favorite CLI;
 
 ```bash
-python run.py --r 2 --g 200 --t 100 --f seeds.csv`
+python3 run.py --r 2 --g 200 --t 100 --f seeds.csv`
 ```
 
 `--r` flag : repulsion factor
 `--g` flag : Grid size 
 `--t` flag : final time till the simulation runs 
 `--f` flag : filename containing seed indices
+
+<video width="320" height="240" controls>
+  <source src="crownshyness.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
 
 Note: The CSV file should contain two columns, with the first column representing the x-coordinate and the second column representing the y-coordinate of each seed point.
 
@@ -62,6 +69,7 @@ Currently, the simulation relies on the seeds.csv file for the initial seed valu
 
 ### Aknowledgements:
 Sandra Elsa Sanjai, University of Padua, Italy
+
 
 ### Image credits:
 <a href="https://commons.wikimedia.org/wiki/File:Crown_shyness.jpg">Akasmita</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
