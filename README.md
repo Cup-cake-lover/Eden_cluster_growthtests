@@ -6,7 +6,7 @@ This Python script simulates the growth of Eden clusters with the inclusion of a
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Crown_shyness.jpg"/>
 
-![Read more about crown shyness on Wikipedia](https://en.wikipedia.org/wiki/Crown_shyness)
+[Read more about crown shyness on Wikipedia](https://en.wikipedia.org/wiki/Crown_shyness)
 
 
 ## How it Works
@@ -15,16 +15,16 @@ The model is based on Eden Cluster growth, with an added repulsion factor that p
 
 
 ### Features
--- Adjustable Repulsion: Control how strongly growing clusters repel each other with the `--r` flag.
--- Customizable Grid: Set the grid size for the simulation.
--- Seed File for Initial Cluster Points: Customize the starting points by providing a CSV file with seed indices.
--- Random Seed Generation: Automatically generate random seed points for the simulation.
+- Adjustable Repulsion: Control how strongly growing clusters repel each other with the `--r` flag.
+- Customizable Grid: Set the grid size for the simulation.
+- Seed File for Initial Cluster Points: Customize the starting points by providing a CSV file with seed indices.
+- Random Seed Generation: Automatically generate random seed points for the simulation.
 
 ### Requirements
 
--- Python 3.x
--- Numpy
--- Matplotlib
+- Python 3.x
+- Numpy
+- Matplotlib
 
 ### Usage:
 
@@ -39,23 +39,31 @@ python run.py --r 2 --g 200 --t 100 --f seeds.csv`
 `--t` flag : final time till the simulation runs 
 `--f` flag : filename containing seed indices
 
+Note: The CSV file should contain two columns, with the first column representing the x-coordinate and the second column representing the y-coordinate of each seed point.
 
 
+## Generating random seeds
 
-WARNING : Currently this code runs on the basis of the seed values put in the seeds.csv file. This file can be custom made where first colomn corresponds to x value\ of the index and next colomn corresponds to the y value of the index. Please add the seed point accordingly to your chose grid size.
+```bash
+python3 random_seed_gen.py --g 200 --r 2 --s 6969 --N 5
+```
 
-# UPDATE : A new file for creation for random seed points are added 
-Usage :  python3 random_seed_gen.py --g 200 --r 2 --s 6969 --N 5 \
 
-`--r` flag : repulsion factor
-`--g` flag : Grid size 
-`--s` flag : Random seed value (Any integer) 
-`--N` flag : Number of trees required. 
+Command Line Arguments:
+- `--g`: Grid size (the size of the simulation grid).
+- `--r`: Repulsion factor (for future use).
+- `--s`: Random seed value (any integer to seed the random generator).
+- `--N`: Number of trees (how many seed points to generate).
 
-This can create any randomly distributed seed lattice.
 
-Aknowledgements: Sandra Elsa Sanjai, University of Padua, Italy
-Image credits:
+### ⚠️ Warning
+
+Currently, the simulation relies on the seeds.csv file for the initial seed values. Ensure that the grid size corresponds to the coordinates in your seed file, and adjust accordingly. For instance, if your grid size is 200x200, make sure your seed points fall within this range.
+
+### Aknowledgements:
+Sandra Elsa Sanjai, University of Padua, Italy
+
+### Image credits:
 <a href="https://commons.wikimedia.org/wiki/File:Crown_shyness.jpg">Akasmita</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons
 
 
