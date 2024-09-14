@@ -39,10 +39,11 @@ python3 run.py --r 2 --g 200 --t 100 --f seeds.csv`
 `--t` flag : final time till the simulation runs 
 `--f` flag : filename containing seed indices
 
-<video width="320" height="240" controls>
-  <source src="crownshyness.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+After it runs, it should immediatly show you the result in a seperate window!
+
+
+![Eden Cluster Growth Animation](crownshyness.gif)
+
 
 
 
