@@ -43,10 +43,12 @@ After it runs, it should immediatly show you the result in a seperate window! He
 
 
 <p align="center">
-  <img src="crownshyness.gif" alt="Eden Cluster Growth Animation">
+  <img src="results/crownshyness.gif" alt="Eden Cluster Growth Animation">
 </p>
 
+With a specific seed arrangement,
 
+<img src="results/Shyness_picture.png" alt="Simulation results">
 
 
 Note: The CSV file should contain two columns, with the first column representing the x-coordinate and the second column representing the y-coordinate of each seed point.
