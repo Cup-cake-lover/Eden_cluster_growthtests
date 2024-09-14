@@ -39,10 +39,12 @@ python3 run.py --r 2 --g 200 --t 100 --f seeds.csv`
 `--t` flag : final time till the simulation runs 
 `--f` flag : filename containing seed indices
 
-After it runs, it should immediatly show you the result in a seperate window!
+After it runs, it should immediatly show you the result in a seperate window! Here's a nice animation prepared with the code.
 
 
-![Eden Cluster Growth Animation](crownshyness.gif)
+<p align="center">
+  <img src="crownshyness.gif" alt="Eden Cluster Growth Animation">
+</p>
 
 
 
@@ -66,7 +68,9 @@ Command Line Arguments:
 
 ### ⚠️ Warning
 
-Currently, the simulation relies on the seeds.csv file for the initial seed values. Ensure that the grid size corresponds to the coordinates in your seed file, and adjust accordingly. For instance, if your grid size is 200x200, make sure your seed points fall within this range.
+- Currently, the simulation relies on the seeds.csv file for the initial seed values. Ensure that the grid size corresponds to the coordinates in your seed file, and adjust accordingly. For instance, if your grid size is 200x200, make sure your seed points fall within this range.
+
+- Make sure that the repulsion factor and the grid size is not too high! It could cause the kernel to crash due to excessive RAM usage.
 
 ### Aknowledgements:
 Sandra Elsa Sanjai, University of Padua, Italy
