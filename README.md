@@ -1,5 +1,10 @@
-# CrownshynessMaster
-A cellular automaton crown shyness emulator
+# Excluding Eden Clusters
+
+
+A cellular automaton eden cluster simulator -- A model to emulate crown shyness patterns
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Crown_shyness.jpg"/>
+
 
 This python script works on the basis of growing Eden Clusters. A specific repulsion factor is added to produce repulsion
 
