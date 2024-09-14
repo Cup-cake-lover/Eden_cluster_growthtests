@@ -34,10 +34,10 @@ type in your favorite CLI;
 python3 run.py --r 2 --g 200 --t 100 --f seeds.csv`
 ```
 
-`--r` flag : repulsion factor
-`--g` flag : Grid size 
-`--t` flag : final time till the simulation runs 
-`--f` flag : filename containing seed indices
+- `--r` flag : repulsion factor
+- `--g` flag : Grid size 
+- `--t` flag : final time till the simulation runs 
+- `--f` flag : filename containing seed indices
 
 After it runs, it should immediatly show you the result in a seperate window! Here's a nice animation prepared with the code.
 
