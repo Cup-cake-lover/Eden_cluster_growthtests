@@ -31,13 +31,14 @@ The model is based on Eden Cluster growth, with an added repulsion factor that p
 type in your favorite CLI;
 
 ```bash
-python3 run.py --r 2 --g 200 --t 100 --f seeds.csv`
+python3 run.py --r 2 --g 200 --t 100 --f seeds.csv --animate
 ```
 
 - `--r` flag : repulsion factor
 - `--g` flag : Grid size 
 - `--t` flag : final time till the simulation runs 
 - `--f` flag : filename containing seed indices
+- `--animate` flag : if enabled, produces an animation
 
 After it runs, it should immediatly show you the result in a seperate window! Here's a nice animation prepared with the code.
 
